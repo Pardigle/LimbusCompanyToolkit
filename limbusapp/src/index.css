@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Mikodacs';
+    src: url('./fonts/Mikodacs.woff2') format('woff2');
+}
+
+* {
+    font-family: 'Mikodacs', sans-serif !important;
+}
+
+html {
+    background-color: #1a1210;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
