@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function LightBox({ action = null, value = null, children }) {
+export default function LightBox({ currentPage = null, action = null, value = null, children }) {
   const [isPressed, setIsPressed] = useState(false);
   const cutSize = '5px';
 
@@ -29,7 +29,7 @@ export default function LightBox({ action = null, value = null, children }) {
     >
       <div
         style={{
-          backgroundColor: isPressed ? '#ff9800' : '#917761',
+          backgroundColor: isPressed ? '#ff9900' : (currentPage === value) ? '#ff9800' : '#917761',
           marginTop: '0.2rem',
           marginBottom: '0.2rem',
           padding: '2.5px',
@@ -44,8 +44,8 @@ export default function LightBox({ action = null, value = null, children }) {
       >
         <div
           style={{
-            backgroundColor: isPressed ? '#3d2711' : '#311d1a',
-            color: isPressed ? '#ffcc80' : '#bb9f81',
+            backgroundColor: isPressed ? '#5e2f00' :  (currentPage === value) ? '#3d2711' : '#311d1a',
+            color: isPressed ? '#ffe2c3' : (currentPage === value) ? '#ffcc80' : '#bb9f81',
             padding: '0.3rem',
             display: 'flex',
             fontWeight: '400',

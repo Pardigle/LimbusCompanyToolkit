@@ -5,11 +5,13 @@
 
 * {
     font-family: 'Mikodacs', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
     background-color: #1a1210;
-    user-select: none;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
+    overflow: auto;
 }

@@ -28,33 +28,49 @@ export default function App() {
     <div style={{
       display: 'flex',
       width: '83rem',
-      height: '100vh',
       gap: '1rem',
-      overflow: 'hidden',
+      scrollbarWidth: 'none',
       boxSizing: 'border-box',
-      padding: '0.3rem',
     }}>
       <div style={{
         width: '16rem',
         flexShrink: 0,
       }}>
-        <Box>
-          <LightBox action={setCurrentPage} value={'Timeline'}>
-            <span style={{ paddingTop:'0.3rem' }}>Timeline</span>
-          </LightBox>
-          <LightBox action={setCurrentPage} value={'Shards'}>
-            <span style={{ paddingTop:'0.3rem' }}>Shards</span>
-          </LightBox>
-          <LightBox action={setCurrentPage} value={'XPCalc'}>
-            <span style={{ paddingTop:'0.3rem' }}>XP Calculator</span>
-          </LightBox>
-        </Box>
+        <div style={{
+          position:'sticky',
+          padding: '1rem',
+          top: 0,
+          zIndex: 100,
+        }}>
+          <Box>
+            <LightBox currentPage={currentPage} action={setCurrentPage} value={'Timeline'}>
+              <span style={{ paddingTop:'0.3rem' }}>Timeline</span>
+            </LightBox>
+            <LightBox currentPage={currentPage} action={setCurrentPage} value={'Shards'}>
+              <span style={{ paddingTop:'0.3rem' }}>Shards</span>
+            </LightBox>
+            <LightBox currentPage={currentPage} action={setCurrentPage} value={'XPCalc'}>
+              <span style={{ paddingTop:'0.3rem' }}>XP Calculator</span>
+            </LightBox>
+          </Box>
+        </div>
       </div>
-
-      {(currentPage === 'Timeline') && 
-        <Timeline/>
+        
+      {(currentPage === 'Timeline') &&
+        <div style={{
+          padding: "2rem",
+          width:"100%",
+          height:"32rem"
+        }}>
+          <span style={{
+            fontSize: '3rem',
+            color: '#736454',
+            fontWeight: '400'
+          }}>Timeline</span>
+          <Timeline/>
+        </div>
       }
-      {(currentPage === 'XPCalc') && 
+      {(currentPage === 'XPCalc') &&
         <XPCalc/>
       }
       {(currentPage === 'Shards') && 
