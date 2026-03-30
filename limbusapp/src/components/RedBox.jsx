@@ -10,7 +10,7 @@ export default function RedBox({children}) {
                     padding: '0.3rem'
                 }}>
                     <div style={{
-                        backgroundColor:'#080808',
+                        backgroundColor:'#311d1a',
                         color: '#b89c7f',
                         padding: '0.3rem',
                     }}>

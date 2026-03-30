@@ -28,17 +28,19 @@ export default function App() {
     <div style={{
       display: 'flex',
       width: '83rem',
-      gap: '1rem',
       scrollbarWidth: 'none',
       boxSizing: 'border-box',
     }}>
       <div style={{
-        width: '16rem',
+        width: '18rem',
         flexShrink: 0,
+        display: 'flex',
+        justifyContent: 'center',
       }}>
         <div style={{
           position:'sticky',
-          padding: '1rem',
+          paddingTop: '1rem',
+          width: '16rem',
           top: 0,
           zIndex: 100,
         }}>
@@ -58,14 +60,15 @@ export default function App() {
         
       {(currentPage === 'Timeline') &&
         <div style={{
-          padding: "2rem",
+          padding: "1rem",
           width:"100%",
           height:"32rem"
         }}>
           <span style={{
             fontSize: '3rem',
-            color: '#736454',
-            fontWeight: '400'
+            color: '#f19a07cc',
+            fontWeight: '400',
+            paddingLeft: '1.5rem'
           }}>Timeline</span>
           <Timeline/>
         </div>

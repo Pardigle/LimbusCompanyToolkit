@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import Box from "../components/Box";
 import RedBox from "../components/RedBox";
 import BrownBox from "../components/BrownBox";
+import DarkBox from "../components/DarkBox"; 
+import CrtBox from "../components/CrtBox";
+import Chain from "../components/Chain";
 
 const EVENTS = [
   {
@@ -36,20 +39,6 @@ const EVENTS = [
     label: "Future Event",
     bullets: ["AK Collab"],
   },
-  {
-    date: "04.2026",
-    activated: false,
-    hotDate: true,
-    label: "New Event",
-    bullets: ["UT S", "IDK"],
-  },
-  {
-    date: "01.04.2026",
-    activated: false,
-    hotDate: false,
-    label: "Future Event",
-    bullets: ["AK Collab"],
-  },
 ];
 
 const ACTIVATED = "#f19a07";
@@ -63,7 +52,7 @@ export default function Timeline() {
 
   useEffect(() => {
     EVENTS.forEach((_, i) => {
-      setTimeout(() => setVisible((prev) => [...prev, i]), i * 220);
+      setVisible((prev) => [...prev, i]);
     });
   }, [EVENTS]);
 
@@ -76,6 +65,17 @@ export default function Timeline() {
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Rajdhani:wght@400;600;700&display=swap');
+
+        @keyframes fallAndRecoil {
+          0% { transform: translateY(-1000px); }
+          55% { transform: translateY(40px); } /* The "extend slightly" part */
+          80% { transform: translateY(-18px); } /* The "go up a little" part */
+          100% { transform: translateY(0); }    /* Final position */
+        }
+
+        .hanging-container {
+          animation: fallAndRecoil 0.6s ease-out forwards;
+        }
 
         .tl-root, .tl-root * { box-sizing: border-box; }
 
@@ -95,7 +95,6 @@ export default function Timeline() {
           padding-bottom: 40px; 
           opacity: 0;
           transform: translateY(16px);
-          transition: opacity 0.4s ease, transform 0.4s ease;
         }
 
         .tl-item.shown {
@@ -217,7 +216,9 @@ export default function Timeline() {
             font-weight: 800; 
         }
       `}</style>
-
+      <Box>
+      <BrownBox>
+      <div style={{ paddingRight: '1.5rem'}}>
       <div className="tl-root">
         {EVENTS.map((ev, i) => {
           const isActivated = ev.activated;
@@ -257,11 +258,18 @@ export default function Timeline() {
             </div>
           );
         })}
-      </div>
-      <div style={{
+      </div> 
+      </div>      
+      </BrownBox>
+      </Box>
+      <div className="hanging-container" style={{
         flex: 1,
-        marginLeft: '3rem'
+        marginLeft: '1rem'
       }}>
+        <div style={{ display: 'flex' }}>
+          <Chain style={{ marginLeft: '25px', width: '20px', zIndex: -4, marginTop: '-300px', marginBottom: '-130px' }}/>
+          <Chain style={{ marginLeft: '400px', width: '20px', zIndex: -1, marginTop: '-300px', marginBottom: '-130px' }}/>
+        </div>
         <div style={{
             display: 'flex',
             flexDirection: 'column',
@@ -285,6 +293,10 @@ export default function Timeline() {
                     </div>
                 </BrownBox>
             </div>
+            <div style={{ display: 'flex', }}>
+              <Chain style={{ marginLeft: '25px', width: '20px', zIndex: -5, marginTop: '-200px', marginBottom: '-240px' }}/>
+              <Chain style={{ marginLeft: '400px', width: '20px', zIndex: -2, marginTop: '-200px', marginBottom: '-240px'}}/>
+            </div>
             <div>
                 <RedBox>
                     <div style={{
@@ -302,25 +314,7 @@ export default function Timeline() {
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '1rem'
-                    }}>
-                        <Box>
-                            <div style={{
-                                height: '5rem'
-                            }}>
-                            </div>
-                        </Box>
-                        <Box>
-                            <div style={{
-                                height: '5rem'
-                            }}>
-                            </div>
-                        </Box>
-                        <Box>
-                            <div style={{
-                                height: '5rem'
-                            }}>
-                            </div>
-                        </Box>                                                 
+                    }}>                                              
                     </div>
                 </BrownBox>
             </div>

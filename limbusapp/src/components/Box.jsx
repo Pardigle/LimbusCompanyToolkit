@@ -6,7 +6,6 @@ export default function Box({children}) {
             style={{
                 backgroundColor: '#946137',
                 padding: '4px',
-                width: '100%',
                 clipPath: `polygon(
                     ${cutSize} 0%, calc(100% - ${cutSize}) 0%, 
                     100% ${cutSize}, 100% calc(100% - ${cutSize}), 
