@@ -22,7 +22,7 @@ export default function App() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const [currentPage, setCurrentPage] = useState("XPCalc");
+  const [currentPage, setCurrentPage] = useState("Timeline");
 
   return (
     <div style={{

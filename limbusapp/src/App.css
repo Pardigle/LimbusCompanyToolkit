@@ -1,0 +1,22 @@
+/* --- Entrance Animation --- */
+.hanging-container-in {
+    animation: fallAndRecoil 0.6s ease-out forwards;
+}
+
+@keyframes fallAndRecoil {
+    0% { transform: translateY(-1000px); }
+    55% { transform: translateY(40px); } 
+    80% { transform: translateY(-18px); } 
+    100% { transform: translateY(0); }    
+}
+
+/* --- Exit Animation --- */
+.hanging-container-out {
+    animation: pullUp 0.4s ease-in forwards;
+}
+
+@keyframes pullUp {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(20px); } /* Slight "dip" before pulling up */
+    100% { transform: translateY(-1000px); }
+}

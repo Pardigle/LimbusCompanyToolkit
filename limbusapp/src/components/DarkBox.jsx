@@ -21,7 +21,9 @@ export default function DarkBox({ children }) {
             calc(100% - ${cutSize}) 100%, ${cutSize} 100%, 
             0% calc(100% - ${cutSize}), 0% ${cutSize}
           )`,
-          minWidth: '15rem'
+          minWidth: '15rem',
+          WebkitTouchCallout: 'none',
+          WebkitUserSelect: 'none'
         }}
       >
         <div

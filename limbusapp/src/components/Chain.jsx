@@ -25,12 +25,13 @@ export default function Chain({
 
   return (
     <svg
-      width="40"
+      width="60"
       height={totalH}
       viewBox={`-20 0 40 ${totalH}`}
       xmlns="http://www.w3.org/2000/svg"
       style={{
         display: 'block',
+        overflow: 'visible',
         ...style
       }}
     >
@@ -42,8 +43,8 @@ export default function Chain({
 
       {/* Central Rod - Amber/Tan with black borders */}
       <rect 
-        x="-7.5" y="18" width="15" height={lastLink + 20} rx="1"
-        fill="#957244" stroke="#000000" strokeWidth="3" 
+        x="-9.5" y="18" width="20" height={lastLink + 20} rx="0"
+        fill="#957244" stroke="#000000" strokeWidth="7" 
       />
 
       {/* Individual Links */}

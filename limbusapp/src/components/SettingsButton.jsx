@@ -1,14 +1,19 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-export default function SettingsButton({ children }) {
+export default function SettingsButton({ action=null, children }) {
   const [isPressed, setIsPressed] = useState(false);
   const cutSize = '4px';
+
+  const handlePressStart = () => {
+    setIsPressed(true);
+    if (action) action(true); // Trigger action on press
+  };
 
   const containerStyle = {
     marginTop: '0.2rem',
     marginBottom: '0.2rem',
     display: 'inline-flex',
-    padding: '2px',
+    padding: '3px',
     backgroundColor: '#050505',
     cursor: 'pointer',
     userSelect: 'none',
@@ -35,8 +40,8 @@ export default function SettingsButton({ children }) {
     minWidth: '100px',
     transition: 'all 0.1s ease',
     backgroundColor: isPressed ? '#342b23' : '#e3c59c',
-    color: isPressed ? '#ff9800' : '#120f0c',
-    boxShadow: isPressed ? 'inset 0 0 10px #ff9800' : 'inset 0 0 4px #372f23',
+    color: isPressed ? '#ffbb1b' : '#120f0c',
+    boxShadow: isPressed ? 'inset 0 0 10px #ff9800' : 'inset 0 0 5px #372f23',
     clipPath: `polygon(
       calc(${cutSize} - 1px) 0%, calc(100% - (${cutSize} - 1px)) 0%, 
       100% calc(${cutSize} - 1px), 100% calc(100% - (${cutSize} - 1px)), 
@@ -50,7 +55,7 @@ export default function SettingsButton({ children }) {
     fontSize: '1.2rem',
     marginTop: '0.1rem',
     letterSpacing: '1px',
-    textShadow: isPressed ? '0 0 8px rgba(255, 152, 0, 0.6)' : 'none',
+    textShadow: isPressed ? '0 0 12px rgba(255, 153, 0, 0.92)' : 'none',
     userSelect: 'none',
   };
 
@@ -58,10 +63,10 @@ export default function SettingsButton({ children }) {
     <div
         style={containerStyle}
         onMouseDown={() => setIsPressed(true)}
-        onMouseUp={() => setIsPressed(false)}
-        onMouseLeave={() => setIsPressed(false)}
+        onMouseUp={() => {handlePressStart(); setIsPressed(false);}}
+        onMouseLeave={() => {setIsPressed(false);}}
         onTouchStart={() => setIsPressed(true)}
-        onTouchEnd={() => setIsPressed(false)}
+        onTouchEnd={() => {handlePressStart(); setIsPressed(false);}}
     >
       <div style={innerStyle}>
         <span style={textStyle}>{children || 'Settings'}</span>

@@ -5,6 +5,7 @@ import BrownBox from "../components/BrownBox";
 import DarkBox from "../components/DarkBox"; 
 import CrtBox from "../components/CrtBox";
 import Chain from "../components/Chain";
+import '../App.css';
 
 const EVENTS = [
   {
@@ -65,17 +66,6 @@ export default function Timeline() {
     }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Rajdhani:wght@400;600;700&display=swap');
-
-        @keyframes fallAndRecoil {
-          0% { transform: translateY(-1000px); }
-          55% { transform: translateY(40px); } /* The "extend slightly" part */
-          80% { transform: translateY(-18px); } /* The "go up a little" part */
-          100% { transform: translateY(0); }    /* Final position */
-        }
-
-        .hanging-container {
-          animation: fallAndRecoil 0.6s ease-out forwards;
-        }
 
         .tl-root, .tl-root * { box-sizing: border-box; }
 
@@ -216,6 +206,7 @@ export default function Timeline() {
             font-weight: 800; 
         }
       `}</style>
+      <div>
       <Box>
       <BrownBox>
       <div style={{ paddingRight: '1.5rem'}}>
@@ -262,7 +253,8 @@ export default function Timeline() {
       </div>      
       </BrownBox>
       </Box>
-      <div className="hanging-container" style={{
+      </div>
+      <div className="hanging-container-in" style={{
         flex: 1,
         marginLeft: '1rem'
       }}>
