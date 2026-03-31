@@ -12,8 +12,11 @@ import ReactDOM from 'react-dom';
 import LuxuryButton from "../components/LuxuryBotton";
 import CardboardBox from "../components/CardboardBox";
 import BrownBox from "../components/BrownBox";
+import SelectableIcon from "../components/SelectableIcon";
+import TriangleThing from "../components/TriangleThing";
 
 export default function XPCalc() {
+    const icon_source = '/sinner_icons/'
     const [addGoalState, setAddGoalState] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
 
@@ -33,6 +36,12 @@ export default function XPCalc() {
         document.addEventListener('keydown', handleKeyDown);
         return () => document.removeEventListener('keydown', handleKeyDown);
     }, [addGoalState]);
+
+    const sinner_icon_directories = [
+        'yisang_icon', 'faust_icon', 'donqui_icon', 'ryoshu_icon',
+        'meursault_icon', 'honglu_icon', 'heathcliff_icon', 'ishmael_icon', 
+        'rodya_icon', 'sinclair_icon', 'outis_icon', 'gregor_icon'
+    ];
 
     // Render backdrop directly into document.body, completely outside any filter/transform context
     const backdropPortal = addGoalState ? ReactDOM.createPortal(
@@ -76,14 +85,14 @@ export default function XPCalc() {
                             <Chain style={{ marginLeft: '800px', width: '20px', zIndex: -1, marginTop: '-5rem', marginBottom: '-8rem' }} />
                         </div>
                         <div onClick={(e) => e.stopPropagation()} style={{ position: 'relative' }}>
-                            <div style={{zIndex:2000, position: 'absolute', top: '-26px', left:'80px'}}>
+                            <div style={{zIndex:2000, position: 'absolute', top: '-26px', left:'40px'}}>
                                 <CardboardBox>
                                     <div style={{paddingTop: '0.5rem', paddingRight: '15rem', paddingLeft: '2rem'}}>
                                         <span style={{fontSize: '3rem', color:'#eadaa4'}}>ADD GOAL</span>
                                     </div>
                                 </CardboardBox>
                             </div>
-                            <div style={{zIndex:2000, position: 'absolute', top: '-30px', left:'850px'}}>
+                            <div style={{zIndex:2000, position: 'absolute', top: '-30px', left:'770px'}}>
                                 <BrownBox>
                                     <div style={{
                                         display: 'flex',
@@ -93,7 +102,7 @@ export default function XPCalc() {
                                             <span>Identities</span>
                                         </SettingsButton>
                                         <SettingsButton>
-                                            <span style={{transform: 'scale(1, 1.3)', display: 'inline-block', paddingTop: '3px'}}>E.G.O</span>
+                                            <span style={{transform: 'scale(1, 1.3)', display: 'inline-block', }}>E.G.O</span>
                                         </SettingsButton>
                                         <SettingsButton>
                                             <span>Façades</span>
@@ -106,12 +115,82 @@ export default function XPCalc() {
                                 <div style={{ paddingBottom: '0.5rem'}}>
                                     <div style={{display:'flex', gap: '0.2rem'}}>
                                         <DarkBox>
-                                            <div style={{padding: '12rem', paddingInline: '16rem'}}>
+                                            <div style={{height:'24rem', width:'26rem'}}>
+                                                <h3 style={{paddingLeft:'2rem', paddingTop: '2rem', fontWeight: '400'}}>Sinner</h3>
+                                                <div style={{
+                                                    display:'flex',
+                                                    justifyContent:'center'
+                                                }}>
+                                                    <div style={{
+                                                        display: 'grid',
+                                                        gridTemplateColumns: 'repeat(6, 1fr)',
+                                                        gap: '0.2rem',
+                                                        padding: 'rem',
+                                                        width: 'min-content'
+                                                    }}>
+                                                        {sinner_icon_directories.map((file_name, i) => {
+                                                            return (
+                                                                <SelectableIcon key={i}>
+                                                                    <div style={{ width:'3rem', height:'3rem', display: 'flex', justifyContent:'center', alignItems:'center' }}>
+                                                                        <img src={icon_source +file_name+'.svg'} style={{ width:'3rem', margin:'-0.2rem' }} draggable={"false"}/>
+                                                                    </div>
+                                                                </SelectableIcon>
+                                                            )
+                                                        })
+                                                        }
+                                                    </div>
+                                                </div>
+                                                <h3 style={{paddingLeft:'2rem', paddingTop: '1.5rem', fontWeight: '400'}}>Target</h3>
+                                                <div style={{
+                                                    display:'flex',
+                                                    paddingLeft:'2rem',
+                                                    paddingTop:'0.3rem'
+                                                }}>
+                                                    <div style={{flex:1}}>
+                                                        <div style={{width:'7rem'}}>
+                                                            <CardboardBox>
+                                                                <span style={{fontSize:'1.4rem', color:'#edceb5'}}>LEVEL</span>
+                                                            </CardboardBox>
+                                                        </div>
+                                                        <div style={{paddingTop: '0.5rem', display:'flex', alignItems:'center', gap:'0.6rem'}}>
+                                                            <SelectableIcon>
+                                                                <div style={{padding:'1.2rem'}}>
 
+                                                                </div>
+                                                            </SelectableIcon>
+                                                            <TriangleThing size={18} color={"#c4af90"}/>
+                                                            <SelectableIcon>
+                                                                <div style={{padding:'1.2rem'}}>
+
+                                                                </div>
+                                                            </SelectableIcon>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div style={{flex:1}}>
+                                                        <div style={{width:'7rem'}}>
+                                                            <CardboardBox>
+                                                                <span style={{fontSize:'1.4rem', color:'#edceb5'}}>UPTIE</span>
+                                                            </CardboardBox>
+                                                        </div>
+                                                        <div style={{paddingTop: '0.5rem', display:'flex', alignItems:'center', gap:'0.6rem'}}>
+                                                            <SelectableIcon>
+                                                                <div style={{padding:'1.2rem'}}>
+
+                                                                </div>
+                                                            </SelectableIcon>
+                                                            <TriangleThing size={18} color={"#c4af90"}/>
+                                                            <SelectableIcon>
+                                                                <div style={{padding:'1.2rem'}}>
+
+                                                                </div>
+                                                            </SelectableIcon>                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </DarkBox>
                                         <DarkBox>
-                                            <div style={{padding: '12rem', paddingInline: '22rem'}}>
+                                            <div style={{height:'24rem', width:'44rem' }}>
                                                 
                                             </div>
                                         </DarkBox>

@@ -12,7 +12,7 @@
 
 /* --- Exit Animation --- */
 .hanging-container-out {
-    animation: pullUp 0.4s ease-in forwards;
+    animation: pullUp 0.3s ease-in forwards;
 }
 
 @keyframes pullUp {

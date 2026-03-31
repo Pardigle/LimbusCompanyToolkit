@@ -17,7 +17,7 @@ export default function SettingsButton({ action=null, children }) {
     backgroundColor: '#050505',
     cursor: 'pointer',
     userSelect: 'none',
-    boxShadow: isPressed ? '0 0 15px #ff9800, 0 0 5px #ff9800' : 'none',
+    boxShadow: 'none',
     transition: 'all 0.1s ease',
     clipPath: `polygon(
       ${cutSize} 0%, calc(100% - ${cutSize}) 0%, 
