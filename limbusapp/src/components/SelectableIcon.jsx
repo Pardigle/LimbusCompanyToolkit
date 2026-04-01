@@ -22,7 +22,7 @@ export default function SelectableIcon({ children }) {
   const middleRimStyle = {
     padding: '2px',
     display: 'flex',
-    backgroundColor: isPressed ? '#fb8c00' : '#38342f',
+    backgroundColor: isPressed ? '#ff9800' : '#5e5850',
   };
 
   const innerCoreStyle = {
