@@ -1,0 +1,540 @@
+{
+  "idExpCost": {
+    "1": 0,
+    "2": 10,
+    "3": 12,
+    "4": 15,
+    "5": 20,
+    "6": 27,
+    "7": 40,
+    "8": 59,
+    "9": 88,
+    "10": 125,
+    "11": 168,
+    "12": 227,
+    "13": 298,
+    "14": 381,
+    "15": 482,
+    "16": 591,
+    "17": 728,
+    "18": 885,
+    "19": 1064,
+    "20": 1261,
+    "21": 1488,
+    "22": 1739,
+    "23": 2016,
+    "24": 2327,
+    "25": 2674,
+    "26": 3047,
+    "27": 3456,
+    "28": 3899,
+    "29": 4378,
+    "30": 4899,
+    "31": 3899,
+    "32": 4376,
+    "33": 4899,
+    "34": 5468,
+    "35": 6075,
+    "36": 4899,
+    "37": 5469,
+    "38": 6075,
+    "39": 6722,
+    "40": 7413,
+    "41": 6075,
+    "42": 6722,
+    "43": 7413,
+    "44": 8156,
+    "45": 8953,
+    "46": 7413,
+    "47": 7413,
+    "48": 7413,
+    "49": 7413,
+    "50": 7413,
+    "51": 8156,
+    "52": 8156,
+    "53": 8156,
+    "54": 8156,
+    "55": 8156,
+    "56": 8953,
+    "57": 8953,
+    "58": 8953,
+    "59": 8953,
+    "60": 8953
+  },
+
+  "luxExpGain" : {
+    "1": { "expModCost": 2, "expGain": 1700, "skipExpModCost": 4, "skipExpGain": 2650 },
+    "2": { "expModCost": 2, "expGain": 3600, "skipExpModCost": 4, "skipExpGain": 6000 },
+    "3": { "expModCost": 2, "expGain": 4800, "skipExpModCost": 4, "skipExpGain": 7200 },
+    "4": { "expModCost": 3, "expGain": 10000, "skipExpModCost": 6, "skipExpGain": 15000 },
+    "5": { "expModCost": 3, "expGain": 12200, "skipExpModCost": 6, "skipExpGain": 18300 },
+    "6": { "expModCost": 3, "expGain": 14400, "skipExpModCost": 6, "skipExpGain": 21600 },
+    "7": { "expModCost": 3, "expGain": 16800, "skipExpModCost": 6, "skipExpGain": 25200 },
+    "8": { "expModCost": 3, "expGain": 20800, "skipExpModCost": 6, "skipExpGain": 31200 },
+    "9": { "expModCost": 3, "expGain": 25200, "skipExpModCost": 6, "skipExpGain": 37800 }
+  },
+
+  "luxThreadGain" : {
+    "1": { "thrModCost": 2, "thrGain": 2, "skipThrModCost": 4, "skipThrGain": 3 },
+    "2": { "thrModCost": 2, "thrGain": 3, "skipThrModCost": 4, "skipThrGain": 5 },
+    "3": { "thrModCost": 2, "thrGain": 4, "skipThrModCost": 4, "skipThrGain": 6 },
+    "4": { "thrModCost": 2, "thrGain": 5, "skipThrModCost": 4, "skipThrGain": 7 },
+    "5": { "thrModCost": 2, "thrGain": 6, "skipThrModCost": 4, "skipThrGain": 9 }
+  },
+
+  "idUptieCost" : {
+    "0": {
+      "2": { "thread": 0, "shard": 0 },
+      "3": { "thread": 0, "shard": 0 },
+      "4": { "thread": 50, "shard": 20 }   
+    },
+
+    "00": {
+      "2": { "thread": 10, "shard": 0 },
+      "3": { "thread": 40, "shard": 0 },
+      "4": { "thread": 100, "shard": 30 }
+    },
+
+    "000": {
+      "2": { "thread": 20, "shard": 0 },
+      "3": { "thread": 80, "shard": 0 },
+      "4": { "thread": 150, "shard": 50 }
+    }
+  },
+
+
+  "egoUptieCost" : {
+    "base": {
+      "2": { "thread": 0, "shard": 0 },
+      "3": { "thread": 0, "shard": 0 },
+      "4": { "thread": 110, "shard": 80 }
+    },
+
+    "zayin": {
+      "2": { "thread": 20, "shard": 0 },
+      "3": { "thread": 60, "shard": 0 },
+      "4": { "thread": 110, "shard": 80 }
+    },
+
+    "teth": {
+      "2": { "thread": 25, "shard": 0 },
+      "3": { "thread": 70, "shard": 0 },
+      "4": { "thread": 130, "shard": 90 }
+    },
+
+    "he": {
+      "2": { "thread": 30, "shard": 0 },
+      "3": { "thread": 80, "shard": 0 },
+      "4": { "thread": 150, "shard": 100 }
+    },
+
+    "waw": {
+      "2": { "thread": 35, "shard": 0 },
+      "3": { "thread": 90, "shard": 0 },
+      "4": { "thread": 170, "shard": 150 }
+    }
+  },
+
+  "character": [
+    { 
+      "name": "Yi Sang",
+
+      "id": [
+        { "idName": "LCB Sinner",                   "idRarity": "0",    "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_lcb.png" },
+        { "idName": "Seven Assoc. South Section 6", "idRarity": "00",   "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_seven.png" },
+        { "idName": "Molar Office Fixer",           "idRarity": "00",   "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_molar.png" },
+        { "idName": "The Pequod First Mate",        "idRarity": "00",   "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_pequod.png" },
+        { "idName": "Dieci Assoc. South Section 4", "idRarity": "00",   "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_dieci.png" },
+        { "idName": "LCE E.G.O::Lantern",           "idRarity": "00",   "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_lantern.png" },
+        { "idName": "Blade Lineage Salsu",          "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_blade.png" },
+        { "idName": "Effloresced E.G.O::Spicebush", "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_spicebush.png" },
+        { "idName": "W Corp. L3 Cleanup Agent",     "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_wcorp.png" },
+        { "idName": "The Ring Pointillist Student", "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_ring.png" },
+        { "idName": "Lobotomy E.G.O::Solemn Lament", "idRarity": "000", "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_solemn.png" },
+        { "idName": "Liu Assoc. South Section 3",   "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_liu.png" },
+        { "idName": "N Corp. E.G.O::Fell Bullet",   "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_ncorp.png" },
+        { "idName": "Heishou Pack - Wu Branch",     "idRarity": "000",  "currentLevel": "1",    "idCurrentUptie": "1", "idImage": "/identities/yisang/01_wu.png" },
+        { "idName": "The House of Spiders: The Index Nursefather", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/yisang/01_index.png" }
+       ],
+
+      "ego": [
+        { "egoName": "Crow's Eye View", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_crows.png" },
+        { "egoName": "Bygone Days", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_bygone.png" },
+        { "egoName": "4th Match Flame", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_4th.png" },
+        { "egoName": "Wishing Cairn", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_wishing.png" },
+        { "egoName": "Dimension Shredder", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_dimension.png" },
+        { "egoName": "Fell Bullet", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_fell.png" },
+        { "egoName": "Sunshower", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_sunshower.png" },
+        { "egoName": "Great Trichiliocosm", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "/egos/yisang/01_great.png" }         
+      ]
+    },
+
+    {
+      "name": "Faust",
+
+      "id": [
+        { "idName": "LCB Sinner","idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_lcb.png" },
+        { "idName": "W Corp. L2 Cleanup Agent", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_wcorp.png" },
+        { "idName": "Lobotomy Corp. Remnant", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_lob.png" },
+        { "idName": "Zwei Assoc. South Section 4", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_zwei.png" },
+        { "idName": "Wuthering Heights Butler", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_butler.png" },
+        { "idName": "The One Who Grips", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_grip.png" },
+        { "idName": "Seven Assoc. South Section 4", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_seven.png" },
+        { "idName": "Lobotomy E.G.O::Regret", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_regret.png" },
+        { "idName": "Blade Lineage Salsu", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_blade.png" },
+        { "idName": "MultiCrack Office Rep", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_multicrack.png" },
+        { "idName": "LCE E.G.O::Ardor Blossom Star", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_ardor.png" },
+        { "idName": "Heishou Pack - Mao Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_mao.png" },
+        { "idName": "Shi Assoc. East Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_shi.png" },
+        { "idName": "The Index Proselyte:[Paper Slip]", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_index.png" },
+        { "idName": "The House of Spiders: The Ring Apprentice", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "/identities/faust/02_ring.png" }
+      ],
+
+      "ego": [
+        { "egoName": "Representation Emitter", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_representation.png" },
+        { "egoName": "Hex Nail", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_hex.png" },
+        { "egoName": "9:2", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_92.png" },
+        { "egoName": "Lasso", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_lasso.png" },
+        { "egoName": "Fluid Sac", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_fluid.png" },
+        { "egoName": "Telepole", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_telepole.png" },
+        { "egoName": "Thoracalgia", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_thoracalgia.png" },
+        { "egoName": "Command : Meltdown", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_command.png" },
+        { "egoName": "Ardor Blossom Star", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_ardor.png" },
+        { "egoName": "Everlasting", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "/egos/faust/02_everlasting.png" } 
+      ]
+    },
+
+    {
+      "name": "Don Quixote",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Shi Assoc. South Section 5 Director", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "N Corp. Mittelhammer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Lantern", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Blade Lineage Salsu", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L3 Cleanup Agent", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Cinq Assoc. South Section 5 Director", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Middle Little Sister", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "T Corp. Class 3 Collection Staff", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Manager of La Manchaland", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Cinq Assoc. East Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::In the Name of Love and Hate", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Index Proxy - Effloresced E.G.O::Procuration", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "La Sangre de Sancho", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Lifetime Stew", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Wishing Cairn", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Electric Screaming", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Fluid Sac", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Telepole", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Red Sheet", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Yearning-Mircalla", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "In the Name of Love and Hate", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Ryōshū",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Seven Assoc. South Section 6", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "LCCB Assistant Manager", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 4", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "District 20 Yurodivy", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Wakashu", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R.B. Chef de Cuisine", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L3 Cleanup Agent", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Edgar Family Chief Butler", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Red Eyes & Penitence", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - Mao Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "N Corp. E.G.O::Contempt, Awe", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Drifting Blade of Hongyuan", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Faint Aroma & Solitude", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Forest for the Flames", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Soda", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Red Eyes", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Blind Obsession", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "4th Match Flame", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Red Eyes (Open)", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Thoracalgia", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Contempt, Awe", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Great Trichiliocosm", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Meursault",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 6", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Rosespanner Workshop Fixer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Middle Little Brother", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Dead Rabbits Boss", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L2 Cleanup Agent", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "N Corp. Großhammer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R Corp. 4th Pack Rhino", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Blade Lineage Mentor", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Dieci Assoc. South Section 4 Director", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Cinq Assoc. West Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Thumb East Capo IIII", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Prince of La Manchaland", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Hornet [Alteration]", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Chains of Others", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Screwloose Wallop", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Regret", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Electric Screaming", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Pursuance", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Capote", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Yearning-Mircalla", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Crushbound Past", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Hong Lu",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Wakashu", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 5", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L2 Cleanup Agent", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Hook Office Fixer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Fanghunt Office Fixer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Tingtang Gang Gangleader", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "K Corp. Class 3 Excision Staff", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Dieci Assoc. South Section 4", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "District 20 Yurodivy", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Full-Stop Office Rep", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R Corp. 4th Pack Reindeer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Lord of Hongyuan", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The House of Spiders: The Ring Nursefather", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Land of Illusion", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Roseate Desire", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Soda", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Cavernous Wailing", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Lasso", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Dimension Shredder", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Effervescent Corrosion", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "To Remain Oneself", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Tears of the Tarnished Blood", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Heathcliff",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Shi Assoc. South Section 5", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "N Corp. Kleinhammer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Seven Assoc. South Section 4", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "MultiCrack Office Fixer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R Corp. 4th Pack Rabbit", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Sunshower", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Pequod Harpooneer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Öufi Assoc. South Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Wild Hunt", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Full-Stop Office Fixer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Wakashu", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L4 Cleanup Agent - CCA", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - You Branch Adept", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Bodysack", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Holiday", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "AEDD", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Fell Bullet", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Move-in Reg.", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Telepole", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Ya Śūnyatā Tad Rūpam", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Asymmetrical Inertia", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Binds", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Ishmael",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Shi Assoc. South Section 5", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "LCCB Assistant Manager", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Sloshing", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Edgar Family Butler", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R Corp. 4th Pack Reindeer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 4", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Molar Boatworks Fixer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Pequod Captain", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Zwei Assoc. West Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Captain", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Family Hierarch Candidate", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Jeong's Office Rep", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The House of Spiders: The Middle Apprentice", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Snagharpoon", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Hundred-Footed Death Maggot", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Roseate Desire", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Capote", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Bygone Days", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Ardor Blossom Star", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Wingbeat", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Christmas Nightmare", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Tidal Elegy", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Blind Obsession", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Rodion",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "LCCB Assistant Manager", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "N Corp. Mittelhammer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Zwei Assoc. South Section 5", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "T Corp. Class 2 Collection Staff", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Wakashu", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Rosespanner Workshop Rep", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Dieci Assoc. South Section 4", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 4 Director", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Devyat' Assoc. North Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Princess of La Manchaland", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - Si Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::The Sword Sharpened with Tears", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R Corp. 4th Pack Reindeer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "What is Cast", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Rime Shank", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Effervescent Corrosion", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "4th Match Flame", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Pursuance", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Hex Nail", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Sanguine Desire", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Indicant's Trial", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Sinclair",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Zwei Assoc. South Section 6", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Los Mariachis Jefe", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Red Sheet", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Molar Boatworks", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Zwei Assoc. West Section 3", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Blade Lineage Salsu", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The One Who Shall Grip", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Cinq Assoc. South Section 4 Director", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Dawn Office Fixer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Devyat' Assoc. North Section 3", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Middle Little Brother", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Thumb East Soldato II", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - You Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The House of Spiders: The Pinky Apprentice", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "Branch of Knowledge", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Cavernous Wailing", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Impending Day", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Lifetime Stew", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Hex Nail", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Lantern", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "9:2", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Harmony", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Tears of the Tarnished Blood", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Outis",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Blade Lineage Salsu", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "G Corp. Head Manager", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Cinq Assoc. South Section 4", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Ring Pointillist Student", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Seven Assoc. South Section 6 Director", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Molar Office Fixer", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Magic Bullet", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Wuthering Heights Chief Butler", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "W Corp. L3 Cleanup Captain", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Barber of La Manchaland", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - Mao Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "T Corp. Class 3 VDCU Staff", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "LCA Udjat Vanguard Team 3 Leader", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+       ],
+
+      "ego": [
+        { "egoName": "To Páthos Máthos", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "I'll Go fer Scissors. How 'Bout You?", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Ya Śūnyatā Tad Rūpam", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Sunshower", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Ebony Stem", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Holiday", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Dimension Shredder", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Magic Bullet", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Binds", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    },
+
+    {
+      "name": "Gregor",
+
+      "id": [
+        { "idName": "LCB Sinner", "idRarity": "0", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Liu Assoc. South Section 6", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "R.B. Sous-chef", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Rosespanner Workshop Fixer", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Kurokumo Clan Captain", "idRarity": "00", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "G Corp. Manager Corporal", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Zwei Assoc. South Section 4", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Twinhook Pirates First Mate", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Edgar Family Heir", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "The Priest of La Manchaland", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Firefist Office Survivor", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Heishou Pack - Si Branch", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Night Awls Capitano", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "Lobotomy E.G.O::Lamp", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" },
+        { "idName": "LCE E.G.O::AEDD", "idRarity": "000", "currentLevel": "1", "idCurrentUptie": "1", "idImage": "" }
+        ],
+
+      "ego": [
+        { "egoName": "Suddenly, One Day", "egoRarity": "base", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Legerdemain", "egoRarity": "zayin", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Lantern", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Bygone Days", "egoRarity": "teth", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "AEDD", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Solemn Lament", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Christmas Nightmare", "egoRarity": "he", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Garden of Thorns", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" },
+        { "egoName": "Unbrilliant Glory", "egoRarity": "waw", "egoCurrentUptie": "1", "egoImage": "" }
+      ]
+    }
+
+
+  ]
+
+}

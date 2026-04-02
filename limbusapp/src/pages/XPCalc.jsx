@@ -14,11 +14,25 @@ import CardboardBox from "../components/CardboardBox";
 import BrownBox from "../components/BrownBox";
 import SelectableIcon from "../components/SelectableIcon";
 import TriangleThing from "../components/TriangleThing";
+import characterData from '../data/limbus_data.json';
 
 export default function XPCalc() {
-    const icon_source = '/sinner_icons/'
+    const icon_source = '/sinner_icons/';
+    const [selectedChar, setSelectedChar] = useState(null);
+    const currentChar = characterData.character.find(c => c.name === selectedChar);
+    const [mode, setMode] = useState(null);
     const [addGoalState, setAddGoalState] = useState(false);
     const [isExiting, setIsExiting] = useState(false);
+
+    const handleSelectedChar = (e) => {
+        setSelectedChar(e.target.value);
+        setMode(null);
+        setAddGoalState(null);
+    };
+
+    const handleMode = (currentMode) => {
+        setMode(currentMode);
+    };
 
     const handleClose = () => {
         setIsExiting(true);
@@ -98,13 +112,13 @@ export default function XPCalc() {
                                         display: 'flex',
                                         height: '3rem',
                                     }}>
-                                        <SettingsButton>
+                                        <SettingsButton action={() => handleMode("id")}>
                                             <span>Identities</span>
                                         </SettingsButton>
-                                        <SettingsButton>
+                                        <SettingsButton action={() => handleMode("ego")}>
                                             <span style={{transform: 'scale(1, 1.3)', display: 'inline-block', }}>E.G.O</span>
                                         </SettingsButton>
-                                        <SettingsButton>
+                                        <SettingsButton action={() => handleMode("facade")}>
                                             <span>Façades</span>
                                         </SettingsButton>
                                     </div>
@@ -129,8 +143,10 @@ export default function XPCalc() {
                                                         width: 'min-content'
                                                     }}>
                                                         {sinner_icon_directories.map((file_name, i) => {
+                                                            const character = characterData.character[i];
                                                             return (
-                                                                <SelectableIcon key={i}>
+                                                                <SelectableIcon key={i} 
+                                                                onClick={() => { setSelectedChar(character.name) }}>
                                                                     <div style={{ width:'3rem', height:'3rem', display: 'flex', justifyContent:'center', alignItems:'center' }}>
                                                                         <img src={icon_source +file_name+'.svg'} style={{ width:'3rem', margin:'-0.2rem' }} draggable={"false"}/>
                                                                     </div>
@@ -190,8 +206,33 @@ export default function XPCalc() {
                                             </div>
                                         </DarkBox>
                                         <DarkBox>
-                                            <div style={{height:'24rem', width:'44rem' }}>
-                                                
+                                            <div style={{
+                                                height:'24rem', 
+                                                width:'44rem', 
+                                                overflowY: 'auto',
+                                                padding:'2rem',
+                                                display: 'grid',
+                                                gridTemplateColumns: 'repeat(auto-fill, minmax(8rem, auto))',
+                                                gap: '1rem'}}>
+
+                                                {mode === "id" && currentChar && (
+                                                    currentChar.id.map((id, i) => (
+                                                        <button key={i} onClick={() => setAddGoalState(id.idName)}
+                                                        style={{background: 'none', border: 'none', padding: 0}}>
+                                                            <img src = {id.idImage} alt={id.idName} style={{ height:"8rem", width:"auto"}}/>
+                                                        </button>
+                                                    ))
+                                                )}
+
+                                                {mode === "ego" && currentChar && (
+                                                    currentChar.ego.map((ego, i) => (
+                                                        <button key={i} onClick={() => setAddGoalState(ego.egoName)}
+                                                        style={{background: 'none', border: 'none', padding: 0}}>
+                                                            <img src = {ego.egoImage} alt={ego.egoName} style={{ height:"8rem", width:"auto"}}/>
+                                                        </button>
+                                                    ))
+                                                )}
+
                                             </div>
                                         </DarkBox>
                                     </div>

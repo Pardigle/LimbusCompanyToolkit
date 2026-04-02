@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function SelectableIcon({ children }) {
+export default function SelectableIcon({ children, onClick }) {
   const [isPressed, setIsPressed] = useState(false);
 
   const containerStyle = {
@@ -39,6 +39,7 @@ export default function SelectableIcon({ children }) {
 
   return (
     <div
+      onClick={onClick}
       style={containerStyle}
       onMouseDown={() => setIsPressed(true)}
       onMouseUp={() => setIsPressed(false)}
