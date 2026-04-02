@@ -7,6 +7,7 @@ import LuxuryButton from './components/LuxuryBotton';
 import SettingsButton from './components/SettingsButton';
 import DarkBox from './components/DarkBox';
 import OrangeBox from './components/OrangeBox';
+import BrownBox from "./components/BrownBox";
 import XPCalc from './pages/XPCalc';
 import Timeline from './pages/Timeline';
 import Shards from './pages/Shards';
@@ -44,7 +45,15 @@ export default function App() {
           top: 0,
           zIndex: 100,
         }}>
+
+          
+          
           <Box>
+            <BrownBox>
+              <div  style={{ display:"flex", justifyContent: "center" }}>
+                <img src={"/logo/logo_gradient.svg"} style={{ height: "auto", width: "100%"}} />
+              </div>
+            </BrownBox>
             <LightBox currentPage={currentPage} action={setCurrentPage} value={'Timeline'}>
               <span style={{ paddingTop:'0.3rem' }}>Timeline</span>
             </LightBox>
